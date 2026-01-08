@@ -176,5 +176,6 @@ with right:
 
             st.progress(fake_prob if pred == 1 else real_prob)
             c1, c2 = st.columns(2)
-            c1.metric("Real (pseudo)", f"{real_prob:.1%}")
-            c2.metric("Fake (pseudo)", f"{fake_prob:.1%}")
+            c1.metric("Real", f"{real_prob:.1%}")
+            c2.metric("Fake", f"{fake_prob:.1%}")
+
